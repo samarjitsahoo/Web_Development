@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: aqua;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #green{
+            background-color: green;
+        }
+
+        /* If P is immediate inside P then this CSS will apply */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* If p is right after div i.e. p is the next sibling of div */
+        /* div + p{
+            color: aliceblue;
+            background-color: rgb(216, 121, 121);
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is Li paragraph</p></li>
+                <li>This will not get affected</li>
+                <p>This is a Para inside ul</p>
+                
+            </ul>
+            <p>This is a Paragraph </p>
+        </div>
+        <p id="green">This is another Paragraph</p>
+    </div>
+    <h1>This is more on Selectors</h1>
+    <p>This is outermost Paragraph</p>
+    
+</body>
+</html>

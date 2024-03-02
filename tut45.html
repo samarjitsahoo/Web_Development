@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid and media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar' 'section section section aside' 'footer footer footer footer';
+
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: black;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar' 'section section section section' 'aside aside aside aside' 'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px)and (max-width:500px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar' 'section section section section' 'aside aside aside aside' 'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px)and (max-width:800px) {
+            body {
+                background-color: hotpink;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar' 'section section section section' 'aside aside aside aside' 'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>More</span>
+
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nam perferendis inventore vero deserunt alias sed. Qui officiis ipsa dicta modi odit vel iusto reiciendis voluptatum a maiores expedita magni vitae cum voluptas deleniti illo ducimus in, temporibus sit delectus molestias corrupti laudantium? Minus praesentium possimus culpa laboriosam itaque soluta eius! Sint sequi repellendus, at iure, necessitatibus aliquid odio voluptatem iusto eaque qui aperiam totam ut veniam soluta, amet accusamus voluptates! Eos officia odio illum assumenda, corrupti, voluptates maxime molestias non, voluptate itaque consectetur dolorum perspiciatis quasi modi! Eos ducimus exercitationem, illum quibusdam adipisci consequatur quod blanditiis atque nihil voluptatibus hic assumenda at maiores fuga molestias veritatis dicta sequi laborum est non expedita saepe. Sed fuga sit doloremque, dolorem tempora reiciendis id.</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright Code with Selmon 2024
+    </footer>
+
+</body>
+
+</html>

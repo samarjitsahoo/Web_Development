@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: hotpink;
+            border: 2px solid grey;
+            padding: 34px;
+            margin:4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current Time is: <span id="time"></span>
+    </div>
+    <script>
+        // console.log('This is Date Time Tutorial')
+        // let dt=new Date(3020,4,6,9,3,2,34)
+        // console.log(dt)
+
+        // let newDate=new Date("2029-09-30");
+        // console.log(newDate)
+        
+        // let month=newDate.getMonth()
+        // console.log(month)
+        // let dte=newDate.getDate()
+        // console.log(dte)
+        // let hr=newDate.getHours()
+        // console.log(hr)
+        // // let yr=newDate.getFullYear()
+        // // console.log(yr)
+        // newDate.setDate(32)
+        // console.log(newDate)
+
+
+        function updateTime(){
+            time.innerHTML=new Date()
+        }
+        setInterval(updateTime,1000);
+
+    </script>
+    
+</body>
+</html>

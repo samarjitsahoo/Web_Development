@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset*/
+        body {
+            font-family: "Anta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/abs-1850926_1280.jpg');
+        }
+
+        .header {
+            /* border: 2px solid violet; */
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 70%;
+            margin: 20px auto;
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            /* border: 2px solid yellow; */
+            display: inline-block;
+
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+
+        }
+
+        .btn {
+
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: "Anta", sans-serif;
+
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 9px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 11px auto;
+            font-size: 20px;
+            font-family: "Anta", sans-serif;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(60, 55, 55);
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container .btn{
+            display: block;
+            margin: auto;
+            width: 23%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img\dumbbell-1966247_1280.jpg" alt="">
+            <div>Harry Fitness</div>
+
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Selmon
+        </h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

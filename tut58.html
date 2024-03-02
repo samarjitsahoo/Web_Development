@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time Now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58 and it is very interseting")
+
+        function greet(name,byeText){
+            console.log('Hello Good Morning '+name+" "+byeText)
+
+        }
+        // time=setTimeout(greet,5000,"Harry","Take Care")
+        // console.log(time)
+        // clearTimeout(time)
+
+        // // setTimeout(greet(),200);
+        // setInterval(greet,1000)
+        function displayTime(){
+            time=new Date();
+            console.log(time)
+            document.getElementById('time').innerHTML=time;
+        }
+        // setInterval(displayTime,1000)
+        
+    </script>
+</body>
+</html>
