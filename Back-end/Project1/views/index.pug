@@ -1,0 +1,48 @@
+//-Structue of HTML
+doctype html
+html
+  head
+    title Selmon Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact]
+
+    section#introSection
+            div Welcome to Selmon's Dance Academy 
+            div.small Eat Sleep Dance Repeat
+    section#missionSection
+            h2 Our Missions
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-content
+                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla enim nisi sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, veniam corrupti laborum eveniet odit ipsa vel, vero, in odio eius consequatur ex suscipit distinctio!
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-content
+                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla enim nisi sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in distinctio maiores exercitationem et cum numquam rerum deserunt modi, amet fuga, delectus recusandae temporibus!
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-content
+                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla enim nisi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae recusandae, eum culpa quia quaerat rerum aperiam, sapiente nemo cum maiores earum qui natus harum!
+    section#spnsorSection
+            h2 Our Sponsors
+            div#sponsor
+                img(src="/static/img/logo3.png", alt="error" class="spImage")
+                img(src="/static/img/logo1.png", alt="error" class="spImage")
+                img(src="/static/img/logo4.png", alt="error" class="spImage")
+                img(src="/static/img/logo2.png", alt="error" class="spImage")
+
+    footer#footer 
+            | Developed with Love by Samarjit &copy; 2024
+    script
+      include ../static/index.js

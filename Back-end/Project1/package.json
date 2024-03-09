@@ -1,0 +1,15 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "This is a Website for a Popular Dance Academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harry Bhai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "pug": "^3.0.2"
+  }
+}

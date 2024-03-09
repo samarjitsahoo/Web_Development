@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+#navbar{
+    font-family: "Madimi One", sans-serif;
+    background-color: black;
+    padding: 13px 14px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 30px;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+#navbar li a:hover{
+    color: #0ef;
+    font-weight: 200;
+}
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    padding-bottom: 23px;
+    
+    color: aliceblue;
+    background: url('/static/bg.jpg') center/cover no-repeat;
+    height: 400px;
+    background-color: red;
+}
+#introSection .small{
+    font-size: 52px;
+}
+#missionSection{
+    width: 67%;
+    display: block;
+    margin: auto;
+    height: 327px;
+}
+#missionSection h2{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 15px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 23px 21px;
+    height: 209px;
+    display: inline-block;
+    background-color: rgb(123, 235, 243);
+}
+.card h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 12px;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-box p{
+    padding: 12px;
+    text-align: justify;
+}
+#spnsorSection{
+    height: 300px;
+    background-color: #0ef;
+}
+#spnsorSection h2{
+    text-align: center;
+    padding-top: 15px;
+}
+#sponsor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 191px;
+    max-width: 1000px;
+    margin: 27px auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+#footer{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+    background-color: black;
+}
