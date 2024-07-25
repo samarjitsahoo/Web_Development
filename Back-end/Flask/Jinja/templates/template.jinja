@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+        <p>Welcome, {{ user.name }}!</p>
+        <p>Email: {{ user.email }}</p>
+        {% if user.is_admin %}
+            <p>Status: <strong>Admin</strong></p>
+        {% else %}
+            <p>Status: <strong>Regular User</strong></p>
+        {% endif %}
+    </header>
+
+    <main>
+        <section>
+            <h2>Fruits List</h2>
+            <ul>
+                {% for item in items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h2>Score Analysis</h2>
+            <p>Average Score: {{ scores|sum / scores|length }}</p>
+            <ul>
+                {% for score in scores %}
+                    <li>
+                        Score: {{ score }} - 
+                        {% if score >= 90 %}
+                            <span style="color:green;">Excellent</span>
+                        {% elif score >= 75 %}
+                            <span style="color:orange;">Good</span>
+                        {% else %}
+                            <span style="color:red;">Needs Improvement</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Jinja App</p>
+    </footer>
+</body>
+</html>
