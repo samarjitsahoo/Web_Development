@@ -84,7 +84,7 @@ html {
 
 #home::before {
     content: "";
-    background: url(../bg1.jpg) no-repeat center center/cover;
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg) no-repeat center center/cover;
     position: absolute;
     height: 642px;
     width: 100%;
@@ -179,7 +179,7 @@ html {
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url(../contact.jpg) no-repeat center center/cover;
+    background: url(https://cdn.pixabay.com/photo/2015/01/25/21/02/phone-612061_1280.jpg) no-repeat center center/cover;
 
 }
 

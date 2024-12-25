@@ -41,7 +41,7 @@ body{
     padding-bottom: 23px;
     
     color: aliceblue;
-    background: url('/static/bg.jpg') center/cover no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2014/06/01/21/05/ballet-359982_1280.jpg) center/cover no-repeat;
     height: 400px;
     background-color: red;
 }
